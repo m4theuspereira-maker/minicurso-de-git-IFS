@@ -1,0 +1,22 @@
+
+
+<h1>Calcula Maior</h1>
+
+<input type="text" id="campoA">
+<input type="text" id="campoB">
+<button onclick="calculaMaior()">Calcular</button>
+<p id="saida"></p>
+
+<script>
+	function calculaMaior() {
+		let a = parseFloat(campoA.value);
+		let b = parseFloat(campoB.value);
+		if (a > b) {
+			saida.innerHTML = "Maior: " + a;
+		} else if (a < b) {
+			saida.innerHTML = "Maior: " + b;
+		} else {
+			saida.innerHTML = a + " e " + b + " são iguais";
+		}
+	}
+</script>
