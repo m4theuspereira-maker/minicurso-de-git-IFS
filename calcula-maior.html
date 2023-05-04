@@ -1,22 +1,23 @@
 <link rel="stylesheet" href="style.css">
 
-<h1 id="h1">Calcula Maior</h1>
 
-<input type="number" id="campoA">
-<input type="number" id="campoB">
-<button onclick="calculaMaior()">Calcular</button>
+<h1>Calcule Menor</h1>
+
+<input type="number" id="campo1">
+<input type="number" id="campo2">
+<button onclick="calculaMenor()">Calcular</button>
 <p id="saida"></p>
 
 <script>
-	function calculaMaior() {
+	function calculaMenor() {
 		let a = parseFloat(campoA.value);
 		let b = parseFloat(campoB.value);
 		if (a > b) {
-			saida.innerHTML = "Maior: " + a;
+			saida.innerHTML = "Menor: " + a;
 		} else if (a < b) {
-			saida.innerHTML = "Maior: " + b;
+			saida.innerHTML = "Menor: " + b;
 		} else {
-			saida.innerHTML = a + " e " + b + " são iguais";
+			saida.innerHTML = a + " e " + b + " são cabeças de marreta";
 		}
 	}
 </script>
