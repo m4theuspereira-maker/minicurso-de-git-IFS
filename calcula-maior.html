@@ -1,54 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calcula Maior</title>
 
-    <style>
-      body {
-        background-color: #ccc;
-        color: rgba(0, 0, 0, 0.836);
-        margin: auto;
-        max-width: 1000px;
-        text-align: center;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-      }
 
-      .campos {
-        display: flex;
-        flex-direction: column;
-        max-width: 300px;
-        justify-content: center;
-        justify-items: center;
-        gap: 5px;
-        margin: auto;
-      }
-
-      .campos input {
-        padding: 5px;
-        text-align: center;
-      }
-
-      .campos button {
-        padding: 5px;
-        text-align: center;
-        font-weight: bold;
-        background-color: rgb(128, 122, 122);
-        color: aliceblue;
-        border: none;
-        cursor: pointer;
-      }
-
-      .campos button:hover {
-        background-color: rgb(102, 95, 95);
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Calcula Maior</h1>
+<h1>Calcule Menor</h1>
 
     <div class="campos">
       <input type="number" id="campoA" />
@@ -57,18 +9,16 @@
     </div>
     <p id="saida"></p>
 
-    <script>
-      function calculaMaior() {
-        let a = parseFloat(campoA.value);
-        let b = parseFloat(campoB.value);
-        if (a > b) {
-          saida.innerHTML = "Maior: " + a;
-        } else if (a < b) {
-          saida.innerHTML = "Maior: " + b;
-        } else {
-          saida.innerHTML = a + " e " + b + " são iguais";
-        }
-      }
-    </script>
-  </body>
-</html>
+<script>
+	function calculaMenor() {
+		let a = parseFloat(campoA.value);
+		let b = parseFloat(campoB.value);
+		if (a > b) {
+			saida.innerHTML = "Menor: " + a;
+		} else if (a < b) {
+			saida.innerHTML = "Menor: " + b;
+		} else {
+			saida.innerHTML = a + " e " + b + " são cabeças de marreta";
+		}
+	}
+</script>
