@@ -6,3 +6,16 @@ body {
 input {
     color:rgb(245, 0, 0);
 }
+
+h1 {
+  color: aqua;
+  font-family: sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.campoA .campoB {
+  font-family: sans-serif;
+}
