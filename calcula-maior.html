@@ -1,22 +1,34 @@
+<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Mudanças</title>
+</head>
+<body>
 
+	<h1>Calcula Maior</h1>
 
-<h1>Calcule Menor</h1>
-
-<input type="number" id="campo1">
-<input type="number" id="campo2">
-<button onclick="calculaMenor()">Calcular</button>
-<p id="saida"></p>
-
-<script>
-	function calculaMenor() {
-		let a = parseFloat(campoA.value);
-		let b = parseFloat(campoB.value);
-		if (a > b) {
-			saida.innerHTML = "Menor: " + a;
-		} else if (a < b) {
-			saida.innerHTML = "Menor: " + b;
-		} else {
-			saida.innerHTML = a + " e " + b + " são cabeças de marreta";
+	<input type="number" id="campoA">
+	<input type="number" id="campoB">
+	<button onclick="calculaMaior()">Calcular</button>
+	<p id="saida"></p>
+	
+	<script>
+		function calculaMaior() {
+			let a = parseFloat(campoA.value);
+			let b = parseFloat(campoB.value);
+			if (a > b) {
+				saida.innerHTML = "Maior: " + a;
+			} else if (a < b) {
+				saida.innerHTML = "Maior: " + b;
+			} else {
+				saida.innerHTML = a + " e " + b + " são iguais";
+			}
 		}
-	}
-</script>
+	</script>	
+</body>
+</html>
